@@ -4,19 +4,302 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width'>
   <title>lit-element-build-rollup</title>
-  <!-- Force polyfills for testing -->
-  <!-- 
-  <script>
-    window.ShadyDOM = {
-      force: true
-    };
-    if (window.customElements) customElements.forcePolyfill = true;
-  </script>
-  -->
   <script src='./modern/index.js' type="module"></script>
 </head>
 <body>
-  <my-element></my-element>
+<uc-app>
+    <uc-nckd>
+        <a href="/company/nizkiye-ceny-kazhdiy-den/" target="_blank">НИЗКИЕ ЦЕНЫ КАЖДЫЙ ДЕНЬ</a>
+    </uc-nckd>
+    <uc-header itemscope itemtype="http://schema.org/WebSite">
+        <link itemprop="url" href="http://www.example.com/"/>
+        <uc-header-logo itemscope itemtype="http://schema.org/Organization">
+            <a href="/" itemprop="url">
+                <uc-header-logo-img>
+                    <img src="https://omsk.leroymerlin.ru/etc/designs/elbrus/images/logo.svg" alt="" itemprop="logo">
+                </uc-header-logo-img>
+            </a>
+        </uc-header-logo>
+        <uc-header-catalog>
+            <a href="/catalogue/">каталог</a>
+        </uc-header-catalog>
+        <uc-header-search action="/search/">
+            <form itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+                <meta itemprop="target" content="http://example.com/search?q={query}"/>
+                <input itemprop="query-input" type="text" name="query"/>
+                <input type="submit"/>
+            </form>
+        </uc-header-search>
+    </uc-header>
+
+    <!--on top for robot-->
+    <uc-container>
+        <uc-seo-block>
+            <h2>Купить товары из рубрики "Перфораторы" в Леруа Мерлен Омск</h2>
+            <p>Низкие цены на товары из сегмента "Перфораторы" на официальном сайте Леруа Мерлен в Омске. Разнообразный ассортимент, качественная продукция от проверенных поставщиков и профессиональный сервис - все для строительства, ремонта и обустройства вашего дома. Купить товары группы "Перфораторы" в интернет-магазине Леруа Мерлен очень просто. Всегда доступны: онлайн оплата, быстрая доставка и удобный самовывоз в Омске.</p>
+        </uc-seo-block>
+    </uc-container>
+
+    <main>
+        <uc-container>
+            <uc-breadcrumb-list itemscope itemtype="http://schema.org/BreadcrumbList">
+                <uc-breadcrumb-item itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="/" data-division="Главная">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </uc-breadcrumb-item>
+
+                <uc-breadcrumb-item itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="/catalogue/" data-division="Каталог">
+                        <span itemprop="name">Каталог</span>
+                    </a>
+                    <meta itemprop="position" content="2" />
+                </uc-breadcrumb-item>
+
+                <uc-breadcrumb-item itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="/catalogue/dekor/" data-division="Декор">
+                        <span itemprop="name">Декор</span>
+                    </a>
+                    <meta itemprop="position" content="3" />
+                </uc-breadcrumb-item>
+
+                <uc-breadcrumb-item itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="/catalogue/oboi-dlya-sten-i-potolka/" data-division="Обои для стен и потолка">
+                        <span itemprop="name">Обои для стен и потолка</span>
+                    </a>
+                    <meta itemprop="position" content="4" />
+                </uc-breadcrumb-item>
+
+                <uc-breadcrumb-item itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <span itemprop="item" data-division="Декоративные обои">
+            <span itemprop="name">Декоративные обои</span>
+          </span>
+                    <meta itemprop="position" content="5" />
+                </uc-breadcrumb-item>
+
+            </uc-breadcrumb-list>
+
+            <uc-page-title counter='8'>
+                <h1>ВИБРАЦИОННЫЕ ШЛИФОВАЛЬНЫЕ МАШИНЫ</h1>
+            </uc-page-title>
+            <uc-facet-and-list>
+                <uc-facets-list>
+
+                    <uc-current-filter count="150" reset-button>
+
+                        <uc-current-filter-group title="Цветовая палитра" facet-id="@(10837@PimFeat)">
+                            <uc-current-filter-item facet-name="Белый"></uc-current-filter-item>
+                            <uc-current-filter-item facet-name="Синий"></uc-current-filter-item>
+                        </uc-current-filter-group>
+
+                        <uc-current-filter-group title="Основа" facet-id="@(00240@PimFeat)">
+                            <uc-current-filter-item facet-name="Флизелин"></uc-current-filter-item>
+                        </uc-current-filter-group>
+
+                    </uc-current-filter>
+
+                    <uc-facet-toggle title-facet="Цена">
+                        <uc-facet-slider min="1400" max="3000" left-value="1700" right-value="2800" step="10" facet-id="@(currentStoreSellingPrice@Price[store:59])"></uc-facet-slider>
+                    </uc-facet-toggle>
+
+                    <uc-facet-toggle title-facet="ЦВЕТОВАЯ ПАЛИТРА">
+                        <uc-facet-checkbox-group facet-id="@(10837@PimFeat)">
+                            <uc-facet-checkbox-item label="Бежевый" count="198">Бежевый</uc-facet-checkbox-item>
+                            <uc-facet-checkbox-item label="Серый / Серебристый" count="123" checked>Серый / Серебристый</uc-facet-checkbox-item>
+                            <uc-facet-checkbox-item label="Зеленый" count="83" disabled>Зеленый</uc-facet-checkbox-item>
+                            <uc-facet-checkbox-item label="Бежевый" count="198">Бежевый</uc-facet-checkbox-item>
+                        </uc-facet-checkbox-group>
+                    </uc-facet-toggle>
+
+                    <uc-facet-toggle title-facet="Основа" closed>
+                        <uc-facet-checkbox-group facet-id="@(10837@PimFeat)">
+                            <uc-facet-checkbox-item label="Бежевый" count="198">Бежевый</uc-facet-checkbox-item>
+                            <uc-facet-checkbox-item label="Серый / Серебристый" count="123" checked>Серый / Серебристый</uc-facet-checkbox-item>
+                            <uc-facet-checkbox-item label="Зеленый" count="83" disabled>Зеленый</uc-facet-checkbox-item>
+                            <uc-facet-checkbox-item label="Бежевый" count="198">Бежевый</uc-facet-checkbox-item>
+                        </uc-facet-checkbox-group>
+                    </uc-facet-toggle>
+
+                    <uc-facet-toggle title-facet="Ширина">
+                        <uc-facet-slider min="200" max="1000" left-value="500" right-value="800" step="10" facet-id="@(currentStoreSellingPrice@Price[store:59])"></uc-facet-slider>
+                    </uc-facet-toggle>
+
+                </uc-facets-list>
+
+                <uc-plp-wrapper sorted showed typed>
+
+                    <uc-plp-list typed="list" itemscope itemtype="http://schema.org/ItemList">
+
+                        <uc-plp-item itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                            <meta itemprop="productID" content="81960233">
+                            <meta itemprop="color" content="green">
+                            <meta itemprop="name" content="Шуруповерт  Bosch EasyDrill 1200, Li-ion 12 В">
+
+                            <a class="plp-item-img" href="/product/shurupovert-bosch-easydrill-1200-18616671/" title="Шуруповерт  Bosch EasyDrill 1200, Li-ion 12 В" itemprop="url">
+                                <uc-plp-item-img>
+                                    <img src="https://res.cloudinary.com/lmru/image/upload/f_auto,q_auto,w_278,h_278,c_pad,b_white,d_photoiscoming.png/v1494517566/LMCode/18616671.jpg" alt="Шуруповерт  Bosch EasyDrill 1200, Li-ion 12 В" itemprop="image">
+                                </uc-plp-item-img>
+                            </a>
+
+                            <uc-plp-item-title>
+                                <a href="/product/shurupovert-bosch-easydrill-1200-18616671/">Шуруповерт  Bosch EasyDrill 1200, Li-ion 12 В</a>
+                            </uc-plp-item-title>
+
+                            <uc-plp-item-rating rating="3.5" count="275"></uc-plp-item-rating>
+
+                            <uc-plp-item-description>
+                                <uc-plp-item-description-item itemprop="description">
+                                    <span class="key">Артикул</span>
+                                    <span class="value">81960233</span>
+                                </uc-plp-item-description-item>
+                                <uc-plp-item-description-item itemprop="description">
+                                    <span class="key">Вес,кг</span>
+                                    <span class="value">2.5</span>
+                                </uc-plp-item-description-item>
+                                <uc-plp-item-description-item itemprop="description">
+                                    <span class="key">Страна производитель</span>
+                                    <span class="value">Китай</span>
+                                </uc-plp-item-description-item>
+                            </uc-plp-item-description>
+
+                            <uc-plp-item-prices itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <meta itemprop="priceCurrency" content="RUB" />
+
+                                <uc-plp-item-price type="second" content="875,60" currency="₽/кор" itemprop="price">
+                                    875,60
+                                </uc-plp-item-price>
+                                <uc-plp-item-price type="main" content="875,00" currency="₽/шт" itemprop="price">
+                                    875,00
+                                </uc-plp-item-price>
+                            </uc-plp-item-prices>
+
+                            <uc-plp-item-buttons>
+                                <uc-plp-button type-button="compare">Сравнить</uc-plp-button>
+                                <uc-plp-button type-button="shoping-list">В список</uc-plp-button>
+                                <uc-plp-button type-button="buy">В корзину</uc-plp-button>
+                            </uc-plp-item-buttons>
+
+                        </uc-plp-item>
+                    </uc-plp-list>
+                </uc-plp-wrapper>
+            </uc-facet-and-list>
+
+        </uc-container>
+    </main>
+    <footer>
+        <uc-container>
+            <uc-footer>
+                <uc-footer-menu>
+                    <uc-footer-menu-toggle>
+                        <h2>Компания</h2>
+                        <uc-footer-menu-item itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <meta itemprop="name" content="Company Menu">
+                            <a itemprop="url" href="/about/">Наша компания</a>
+                            <a itemprop="url" href="/brands/">Наши марки</a>
+                            <a itemprop="url" href="/postavshchikam/">Как стать поставщиком</a>
+                            <a itemprop="url" href="/razvitie-seti/">Развитие сети</a>
+                            <a itemprop="url" href="https://rabota.leroymerlin.ru/">Наши вакансии</a>
+                            <a itemprop="url" href="/contacty/">Контакты</a>
+                            <a itemprop="url" href="/politika-obrabotki-personalnykh-dannykh/">Политика обработки персональных данных</a>
+                        </uc-footer-menu-item>
+                    </uc-footer-menu-toggle>
+                    <uc-footer-menu-toggle>
+                        <h2>Услуги розничного магазина</h2>
+                        <uc-footer-menu-item itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <meta itemprop="name" content="Retail Store Services Menu">
+                            <a itemprop="url" href="/service/dostavka/">Доставка</a>
+                            <a itemprop="url" href="/service/samovyvoz-tovara/">Самовывоз товара</a>
+                            <a itemprop="url" href="/service/punkty-vydachi-zakazov/">Пункты выдачи заказов</a>
+                            <a itemprop="url" href="/service/vozvrat-tovara/">Возврат товара</a>
+                            <a itemprop="url" href="/service/kredit/">Кредит</a>
+                            <a itemprop="url" href="/service/korporativnym-klientam/">Корпоративным клиентам</a>
+                            <a itemprop="url" href="/service/servisnyy-centr/">Сервисный центр</a>
+                            <a itemprop="url" href="/service/proverka-tehniki/">Проверка техники</a>
+                            <a itemprop="url" href="/service/ustanovka/">Установка</a>
+                            <a itemprop="url" href="/service/rezka-dereva/">Резка дерева</a>
+                            <a itemprop="url" href="/service/kolerovka/">Колеровка</a>
+                            <a itemprop="url" href="/service/overlok/">Оверлок</a>
+                            <a itemprop="url" href="/service/poshiv-shtor/">Пошив штор</a>
+                            <a itemprop="url" href="/service/shkola-remonta/">Школа ремонта</a>
+                            <a itemprop="url" href="/servisnaya-karta/">Сервисная карта</a>
+                            <a itemprop="url" target="_blank" href="//res.cloudinary.com/lmru-test/image/upload/elbrus/faq/правила_программ_лояльности/pravila-programmy-servisnaya-karta.pdf">Правила программы Сервисная карта</a>
+                        </uc-footer-menu-item>
+                    </uc-footer-menu-toggle>
+                    <uc-footer-menu-toggle>
+                        <h2>Интернет-магазин</h2>
+                        <uc-footer-menu-item itemscope itemtype="http://schema.org/SiteNavigationElement">
+                            <meta itemprop="name" content="Online store Menu">
+                            <a itemprop="url" href="/kak-zakazat/">Как заказать</a>
+                            <a itemprop="url" href="/kak-oplatit/">Как оплатить</a>
+                            <a itemprop="url" href="/dostavka/">Доставка и самовывоз</a>
+                            <a itemprop="url" href="/company/obratnaya-svyaz/">Клиентская поддержка</a>
+                            <a itemprop="url" href="/faq/">Вопросы и ответы</a>
+                            <a itemprop="url" href="/basket/regulations/">Правила продажи</a>
+                            <a itemprop="url" href="/podarochnaya-karta/">Подарочная карта</a>
+                        </uc-footer-menu-item>
+                    </uc-footer-menu-toggle>
+                </uc-footer-menu>
+                <uc-footer-link-block>
+                    <uc-footer-social-links itemscope itemtype="http://schema.org/Organization">
+                        <link itemprop="url" href="https://leroymerlin.ru">
+                        <a itemprop="sameAs" href="https://www.facebook.com/LeroyMerlinRussia?fref=ts" title="Facebook" target="_blank">FB</a>
+                        <a itemprop="sameAs" href="https://vk.com/leroy_merlin" title="Vkontakte" target="_blank">Vkontakte</a>
+                        <a itemprop="sameAs" href="https://www.odnoklassniki.ru/leroymerlin" title="Odnoklassniki" target="_blank">Odnoklassniki</a>
+                        <a itemprop="sameAs" href="https://www.youtube.com/user/LeroyMerlinRu" title="YouTube" target="_blank">YouTube</a>
+                        <a itemprop="sameAs" href="https://www.instagram.com/leroymerlinrussia" title="Instagram" target="_blank">Instagram</a>
+                    </uc-footer-social-links>
+                    <uc-footer-subscribe method="POST" action="/_jcr_content/subscription-footer-form/"></uc-footer-subscribe>
+                    <uc-footer-apps>
+                        <uc-footer-app-mobile android itemscope itemtype="http://schema.org/SoftwareApplication">
+                            <meta itemprop="name"  content="Леруа Мерлен"/>
+                            <a href="https://play.google.com/store/apps/details?id=ru.leroymerlin.mobile&hl=ru" itemprop="url">Леруа Мерлен</a> -
+                            <span itemprop="operatingSystem">Android</span> -
+                            <link itemprop="applicationCategory" href="http://schema.org/ShoppingApplication"/>
+                            Рейтинг:
+                            <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                                <span itemprop="ratingValue">4.2</span> (
+                                <span itemprop="ratingCount">36738</span> отзывов )
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <meta itemprop="price" content="0"/>
+                                <meta itemprop="priceCurrency" content="RUB"/>
+                                Бесплатная
+                            </div>
+                            <div itemprop="description">Мобильное приложение Леруа Мерлен - начните строительство и ремонт, не выходя из дома!</div>
+                        </uc-footer-app-mobile>
+                        <uc-footer-app-mobile ios itemscope itemtype="http://schema.org/SoftwareApplication">
+                            <meta itemprop="name"  content="Леруа Мерлен"/>
+                            <a href="https://itunes.apple.com/ru/app/lerua-merlen-leroy-merlin/id896354843?mt=8" itemprop="url">Леруа Мерлен</a> -
+                            <span itemprop="operatingSystem">iOs</span> -
+                            <link itemprop="applicationCategory" href="http://schema.org/ShoppingApplication"/>
+                            Рейтинг:
+                            <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                                <span itemprop="ratingValue">3.9</span> (
+                                <span itemprop="ratingCount">1631</span> оценок )
+                            </div>
+                            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                <meta itemprop="price" content="0"/>
+                                <meta itemprop="priceCurrency" content="RUB"/>
+                                Бесплатная
+                            </div>
+                            <div itemprop="description">Мобильное приложение Леруа Мерлен - начните строительство и ремонт, не выходя из дома!</div>
+                        </uc-footer-app-mobile>
+                    </uc-footer-apps>
+                    <uc-payment-systems></uc-payment-systems>
+                    <uc-adeo-link>
+                        <a data-adeo href="https://www.adeo.com/" target="_blank"></a>
+                        <a data-shop href="https://omsk.leroymerlin.ru/shop/">Магазины Леруа Мерлен</a>
+                    </uc-adeo-link>
+                    <uc-parent-link>
+                        <a href="https://russia.leroymerlin.com/ru" target="_blank">leroymerlin.com</a>
+                    </uc-parent-link>
+                </uc-footer-link-block>
+            </uc-footer>
+        </uc-container>
+    </footer>
+    <link rel="stylesheet" href="/build/elbrusui.css">
+</uc-app>
   <script src="webcomponents-loader.js"></script>
 </body>
 </html>

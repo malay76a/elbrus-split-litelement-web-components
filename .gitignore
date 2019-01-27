@@ -2,3 +2,5 @@
 /node_modules
 /build
 /.idea
+.idea/vcs.xml
+.DS_Store
