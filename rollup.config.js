@@ -6,12 +6,12 @@ export default {
 	output: [{
 		dir: 'build/modern',
 		format: 'es',
-		sourcemap: true,
+		//sourcemap: true,
 
 	}, {
 		dir: 'build/nomodule',
 		format: 'amd',
-		sourcemap: true,
+		//sourcemap: true,
 	}],
 	plugins: [
     resolve({
